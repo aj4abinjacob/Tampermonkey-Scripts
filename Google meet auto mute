@@ -1,0 +1,43 @@
+// ==UserScript==
+// @name         Meet auto mute v3
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        https://meet.google.com/*
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=google.com
+// @grant        none
+// ==/UserScript==
+
+window.addEventListener('load', function() {
+    // your code here
+
+    document.dispatchEvent(
+  new KeyboardEvent("keydown", {
+    key: "e",
+    keyCode: 69, // example values.
+    code: "KeyE", // put everything you need in this object.
+    which: 69,
+    shiftKey: false, // you don't need to include values
+    ctrlKey: true,  // if you aren't going to use them.
+    metaKey: false   // these are here for example's sake.
+  })
+);
+
+
+document.dispatchEvent(
+  new KeyboardEvent("keydown", {
+    key: "d",
+    keyCode: 68, // example values.
+    code: "KeyE", // put everything you need in this object.
+    which: 68,
+    shiftKey: false, // you don't need to include values
+    ctrlKey: true,  // if you aren't going to use them.
+    metaKey: false   // these are here for example's sake.
+  })
+);
+
+
+}, false);
+
+
